@@ -1,5 +1,4 @@
-﻿using ObjectLibrary.BoxObject;
-using ParametricKit;
+﻿using ParametricKit;
 using ParametricKit.Attributes;
 using ParametricKit.FunctionWizard;
 using ParametricKit.Primitives;
@@ -70,7 +69,7 @@ namespace ObjectLibrary.Table
         [ParameterDefinition("CHECK_LEGS")]
         public SpecificationParameter CheckLegs { get; set; } = false;
 
-        public ChildObjectSpecification ChildObject { get; set; }
+        //public ChildObjectSpecification ChildObject { get; set; }
 
     }
 }

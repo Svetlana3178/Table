@@ -4,7 +4,7 @@ using BIMStructureMgd.DatabaseObjects;
 using BIMStructureMgd.ObjectProperties;
 using HostMgd.ApplicationServices;
 using HostMgd.EditorInput;
-using ObjectLibrary.BoxObject;
+
 using ObjectLibrary.Table;
 using ParametricKit;
 using ParametricKit.Tree;

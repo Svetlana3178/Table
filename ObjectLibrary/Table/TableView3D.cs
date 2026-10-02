@@ -1,5 +1,4 @@
-﻿using ObjectLibrary.BoxObject;
-using ParametricKit;
+﻿using ParametricKit;
 using ParametricKit.FunctionWizard;
 using ParametricKit.Primitives;
 using ParametricKit.Primitives.Grips;
@@ -67,7 +66,7 @@ namespace ObjectLibrary.Table
             // Столешница - она же коробочка
             Top = new Box()
             {
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Height = Entity.Specification.ThickTop,
                 Length = Entity.Specification.LengthTop,
@@ -87,7 +86,7 @@ namespace ObjectLibrary.Table
 
                 IsHidden = 1 - Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Radius = Entity.Specification.TableLegSizeCross / 2,
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
@@ -105,7 +104,7 @@ namespace ObjectLibrary.Table
             {
                 IsHidden = 1 - Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Radius = Entity.Specification.TableLegSizeCross / 2,
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
@@ -123,7 +122,7 @@ namespace ObjectLibrary.Table
             {
                 IsHidden = 1- Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Radius = Entity.Specification.TableLegSizeCross / 2,
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
@@ -141,7 +140,7 @@ namespace ObjectLibrary.Table
             {
                 IsHidden = 1 - Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Radius = Entity.Specification.TableLegSizeCross / 2,
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
@@ -160,7 +159,7 @@ namespace ObjectLibrary.Table
             {
                 IsHidden = Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
                 Length = Entity.Specification.TableLegSizeCross,
@@ -182,7 +181,7 @@ namespace ObjectLibrary.Table
             {
                 IsHidden = Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
                 Length = Entity.Specification.TableLegSizeCross,
@@ -203,7 +202,7 @@ namespace ObjectLibrary.Table
             {
                 IsHidden = Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
                 Length = Entity.Specification.TableLegSizeCross,
@@ -224,7 +223,7 @@ namespace ObjectLibrary.Table
             {
                 IsHidden = Entity.Specification.CheckLegs,
 
-                SpecificationReference = Entity.Specification.ChildObject,
+                //SpecificationReference = Entity.Specification.ChildObject,
 
                 Height = Entity.Specification.HeighTable - Entity.Specification.ThickTop,
                 Length = Entity.Specification.TableLegSizeCross,
@@ -250,8 +249,8 @@ namespace ObjectLibrary.Table
                 Name = "Сечение ножки",
                 Assignment = Entity.Specification.CheckLegs,
 
-                BasePointX = Entity.Specification.PointX,
-                BasePointY = Entity.Specification.PointY,
+                BasePointX = Entity.Specification.PointX + 100,
+                BasePointY = Entity.Specification.PointY +100,
                 BasePointZ = Entity.Specification.PointZ + Entity.Specification.HeighTable + 100,
 
                 Tooltip = "Переключатель сечения ножки".AsLiteralExpression(),
@@ -316,7 +315,7 @@ namespace ObjectLibrary.Table
                 Assignment = Entity.Specification.ThickTop,
                 DirectionX = 0,
                 DirectionY = 0,
-                DirectionZ = 1,
+                DirectionZ = -1,
 
                 BasePointX = Entity.Specification.PointX + Entity.Specification.LengthTop / 2,
                 BasePointY = Entity.Specification.PointY + Entity.Specification.WidghtTop / 2,
@@ -352,7 +351,7 @@ namespace ObjectLibrary.Table
                 DirectionX = 1,
                 DirectionY = 0,
                 DirectionZ = 0,
-                BasePointX = Entity.Specification.PointX +
+                BasePointX = Entity.Specification.PointX -
                 Entity.Specification.LengthTop / 2,
                 BasePointY = Entity.Specification.PointY,
                 BasePointZ = Entity.Specification.PointZ,

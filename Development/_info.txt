@@ -1,0 +1,13 @@
+ Проекты EntityReloadClient и EntityReloadServer предназначены для "горячей" перезагрузки объектов, созданых
+с помощью библиотеки ParametricKit.
+
+ Для того, чтобы выполнить перезагрузку в приложении Nanocad нужно загрузить библиотеку EntityReloadServer 
+и вызвать команду nBIMSDK_EntityReloadServer_Start. После этого нужно вызвать метод EntityReloadClient.Reload()
+в специальном проекте (приложение), где будет создаваться экземпляр описания параметрического объекта. Именно
+это описапние и нужно будет передать методу Reload. Пример:
+
+    var entity = new BoxObject(new BoxObjectSpecification());
+    EntityReloadClient.Reload(entity);
+
+ При этом процесс, созданный командой nBIMSDK_EntityReloadServer_Start создаст параметрический объект или
+заменит на новый, описание которого было передано методу Reload.

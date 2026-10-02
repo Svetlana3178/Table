@@ -1,0 +1,95 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EntityReloadClient/1.0.0": {
+        "dependencies": {
+          "hostdbmgd": "1.0.0.0",
+          "hostmgd": "1.0.0.0",
+          "ncBIMParametricKit": "1.0.0.0",
+          "ncBIMSmgd": "1.0.0.0",
+          "nrxgatemgd": "1.0.0.0"
+        },
+        "runtime": {
+          "EntityReloadClient.dll": {}
+        }
+      },
+      "hostdbmgd/1.0.0.0": {
+        "runtime": {
+          "hostdbmgd.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "26.0.7228.4926"
+          }
+        }
+      },
+      "hostmgd/1.0.0.0": {
+        "runtime": {
+          "hostmgd.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "26.0.7228.4926"
+          }
+        }
+      },
+      "ncBIMParametricKit/1.0.0.0": {
+        "runtime": {
+          "ncBIMParametricKit.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "26.0.34101.272"
+          }
+        }
+      },
+      "ncBIMSmgd/1.0.0.0": {
+        "runtime": {
+          "ncBIMSmgd.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "nrxgatemgd/1.0.0.0": {
+        "runtime": {
+          "nrxgatemgd.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "26.0.7228.4926"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityReloadClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "hostdbmgd/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "hostmgd/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ncBIMParametricKit/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ncBIMSmgd/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "nrxgatemgd/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

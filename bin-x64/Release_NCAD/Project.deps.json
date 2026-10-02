@@ -1,0 +1,84 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Project/1.0.0": {
+        "dependencies": {
+          "Dev": "1.0.0",
+          "ObjectLibrary": "1.0.0",
+          "ncBIMParametricKit": "1.0.0.0"
+        },
+        "runtime": {
+          "Project.dll": {}
+        }
+      },
+      "Dev/1.0.0": {
+        "dependencies": {
+          "EntityReloadClient": "1.0.0",
+          "ObjectLibrary": "1.0.0"
+        },
+        "runtime": {
+          "Dev.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "EntityReloadClient/1.0.0": {
+        "runtime": {
+          "EntityReloadClient.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ObjectLibrary/1.0.0": {
+        "runtime": {
+          "ObjectLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ncBIMParametricKit/1.0.0.0": {
+        "runtime": {
+          "ncBIMParametricKit.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dev/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityReloadClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ObjectLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ncBIMParametricKit/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug_NCAD" />
+    <BuildType Name="Release_NCAD" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Dev/Dev.csproj" Id="156c39c4-13d2-4f5a-9594-7eb9435d0f96">
+    <BuildType Solution="Debug_NCAD|*" Project="Debug" />
+    <BuildType Solution="Release_NCAD|*" Project="Release" />
+  </Project>
+  <Project Path="Development/EntityReloadClient/EntityReloadClient.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="Development/EntityReloadServer/EntityReloadServer.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="ObjectLibrary/ObjectLibrary.csproj" Id="78da1e29-6469-4128-82d9-32a8dac27b92">
+    <BuildType Solution="Debug_NCAD|*" Project="Debug" />
+    <BuildType Solution="Release_NCAD|*" Project="Release" />
+  </Project>
+  <Project Path="Project/Project.csproj">
+    <Platform Project="x64" />
+  </Project>
+</Solution>

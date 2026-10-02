@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<Platforms>x64</Platforms>
+	<Configurations>Debug_NCAD;Release_NCAD</Configurations>
+    <DefineConstants>$(DefineConstants);NCAD</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+	<OutputPath>$(SolutionDir)bin-$(Platform)\$(Configuration)</OutputPath>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>	
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dev\Dev.csproj" />
+    <ProjectReference Include="..\ObjectLibrary\ObjectLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="hostdbmgd">
+      <HintPath>$(NCadSDK)\include-x64\hostdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="hostmgd">
+      <HintPath>$(NCadSDK)\include-x64\hostmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ncBIMParametricKit">
+      <HintPath>C:\SDKnano\ncBIM_SDK\include-x64\ncBIMParametricKit.dll</HintPath>
+    </Reference>
+    <Reference Include="nrxgatemgd">
+      <HintPath>$(NCadSDK)\include-x64\nrxgatemgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ncBIMSmgd">
+      <HintPath>$(NCadBIMSDK)\include-x64\ncBIMSmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
